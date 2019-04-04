@@ -35,6 +35,15 @@ html {
   float: left;
 }
 
+.todo {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #333;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

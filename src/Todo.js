@@ -42,7 +42,11 @@ export default class Todo extends Component {
       <ul>
         {
           this.state.todos.map(t =>
-            <li key={t.id} onClick={() => this.complete(t.id)}>
+            <li
+              key={t.id}
+              onClick={() => this.complete(t.id)}
+              className={t.completed ? 'completed todo' : 'todo'}
+            >
               {t.todo}
             </li>
           )

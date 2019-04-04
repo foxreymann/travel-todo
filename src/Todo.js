@@ -21,14 +21,9 @@ export default class Todo extends Component {
   }
 
   complete(id) {
-    this.setState({
-      todos: this.state.todos.map(todo => {
-        if(todo.id === id) {
-          todo.completed = true
-        }
-        return todo
-      })
-    })
+    const todos = this.state.todos.map(td => ({ ...td, completed: td.id === id ? true : td.completed }))
+
+    this.setState({ todos })
   }
 
   render() {

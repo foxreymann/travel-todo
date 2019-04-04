@@ -10,7 +10,8 @@ class App extends Component {
           <h1>Holiday Checklists!</h1>
           <p>The goto place for all your holiday todo lists</p>
         </header>
-      <Todo />
+        <Todo />
+        <Todo />
       </div>
     )
   }

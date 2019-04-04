@@ -34,7 +34,7 @@ export default class Todo extends Component {
   render() {
     return (
       <div className="Todo">
-        <h3>My Todo List</h3>
+        <h3>{this.props.title}</h3>
       <form onSubmit={this.addTodo}>
         <input type="text" ref="todo" placeholder="Add a todo..."/>
         <button type="submit">Add</button>

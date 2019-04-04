@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import Todo from './Todo'
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
           <h1>Holiday Checklists!</h1>
           <p>The goto place for all your holiday todo lists</p>
         </header>
+      <Todo />
       </div>
     )
   }
